@@ -5,7 +5,8 @@ projeto utilizando **HTML, CSS e JavaScript**. O usúario escolhe itens e o sist
 
 ---
 ## ⚙️Objetivo
-- Trabalhar **condicionais (ìf)**
+
+- Trabalhar **condicionais (if)**
 - Manipular dados
 - Construir a lógica básica de algoritmos
 - conhecimentos utilizados: variáveis, operadores, consicionais e função
