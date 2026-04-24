@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimuladorPedido</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <!--- Container principal da página-->
+    <div class="container">
+        <!-- Titulo principal -->
+         <h1> 🍔 Simulado de pedido </h1>
+         <!-- Subtitulo-->
+          <p class="Subtitulo">
+            Bem-Vindo a lancheria do Greg!
+          </p>
+          <!-- Area que contem todos os produtos-->
+           <div class="cards">
+            <!-- CARD = UM PRODUTO -->
+             <!-- usamos label para clicar no card marque checkbox-->
+              <label class="card">
+                <!-- Checkbox que identifica se o item está selecionado -->
+                 <input type="checkbox" id="Hambúrguer">
+                 <!-- Imagem do produto -->
+                  <img src="Assets/aborge-removebg-preview.png" alt="Hambúrguer">
+                  <!-- nome do produto -->
+                   <h2> Hambúrguer</h2>
+                   <!-- descrição-->
+                    <P>Pão, queijo, 2 carnes, tomate, alface</P>
+                    <!-- preços -->
+                     <span> R$ 25,00</span>
+              </label>
+               <!-- batata -->
+                <label class="card">
+                <!-- Checkbox que identifica se o item está selecionado -->
+                 <input type="checkbox" id="Batata">
+                 <!-- Imagem do produto -->
+                  <img src="Assets/batata-removebg-preview.png" alt="Batata">
+                  <!-- nome do produto -->
+                   <h2> Batata (M)</h2>
+                   <!-- descrição-->
+                    <P>Batata frita com molho rose</P>
+                    <!-- preços -->
+                     <span> R$ 12,00</span>
+              </label>
+              <!-- nuggets -->
+               <label class="card">
+                <!-- Checkbox que identifica se o item está selecionado -->
+                 <input type="checkbox" id="Nuggets">
+                 <!-- Imagem do produto -->
+                  <img src="Assets/narget-removebg-preview.png" alt="Nuggets">
+                  <!-- nome do produto -->
+                   <h2> Nuggets (P)</h2>
+                   <!-- descrição-->
+                    <P>Pote de Nuggets com 15 unidades</P>
+                    <!-- preços -->
+                     <span> R$ 15,00</span>
+              </label>
+              <!-- coca -->
+               <label class="card">
+                <!-- Checkbox que identifica se o item está selecionado -->
+                 <input type="checkbox" id="Coca-Cola">
+                 <!-- Imagem do produto -->
+                  <img src="Assets/coquinha-removebg-preview.png" alt="Coca-Cola">
+                  <!-- nome do produto -->
+                   <h2> Coca-Cola</h2>
+                   <!-- descrição-->
+                    <P>Coca-Cola 600ml</P>
+                    <!-- preços -->
+                     <span> R$ 16,00</span>
+              </label>
+              <!-- Sorvete -->
+               <label class="card">
+                <!-- Checkbox que identifica se o item está selecionado -->
+                 <input type="checkbox" id="Sorvete">
+                 <!-- Imagem do produto -->
+                  <img src="Assets/sorvete2-removebg-preview.png" alt="Sorvete">
+                  <!-- nome do produto -->
+                   <h2> Sorvete</h2>
+                   <!-- descrição-->
+                    <P>Taça com 3 bolas de sorvete</P>
+                    <!-- preços -->
+                     <span> R$ 15,00</span>
+              </label>
+              <!-- pizza -->
+               <label class="card">
+                <!-- Checkbox que identifica se o item está selecionado -->
+                 <input type="checkbox" id="Pizza">
+                 <!-- Imagem do produto -->
+                  <img src="Assets/pizza-removebg-preview.png" alt="Pizza">
+                  <!-- nome do produto -->
+                   <h2> Pizza</h2>
+                   <!-- descrição-->
+                    <P>Pizza de 8 fatias</P>
+                    <!-- preços -->
+                     <span> R$ 85,00</span>
+              </label>
+
+           </div>
+           <!-- Botão que chama a função calcular() para somar o pedido -->
+            <button onclick="calcular()"> Calcular pedido</button>
+
+            <!-- Área de resultado do pedido-->
+             <div id="resultado" class="Resultado"></div>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>

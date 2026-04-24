@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+
+    /* fonte do texto */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    /*Cor de fundo*/
+    background-color: rgba(85, 7, 7, 0.863);
+
+    /*Cor do texto*/
+    color:rgb(231, 235, 14);
+    
+}
+/* container central da página*/
+.container{
+    max-width: 1100px; /* largura maxima */
+    margin: 30px auto; /* centraliza*/
+    padding: 20px;
+    text-align: center;
+    text-shadow: 0 4px 12px rgb(99, 54, 0);
+}
+
+/* Estilo do titulo*/
+h1{
+    color: rgba(0, 0, 0, 0.863);
+}
+
+/*subtitulo*/
+.subtitulo{
+    color: rgb(2, 2, 2);
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px darkgoldenrod;
+}
+/* area dos cards*/
+.cards{
+    display: flex; /* colocar lado a lado*/
+    flex-wrap: wrap; /* quebra a linha*/
+    justify-content: center;
+    gap: 20px; /* espaço entre os cards*/
+}
+.card{
+    width: 220px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 16px; /* arredonda as bordas*/
+    padding: 15px;
+    box-shadow: 0 4px 12px rgb(255, 20, 20);
+    cursor: pointer;
+}
+
+/* efeito do mause ao passar*/
+.card:hover{
+    transform: scale(1.03);
+}
+/* cheackbox dentro card*/
+.card input{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    
+}/*imagem*/
+.card img{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+/* nome do produto*/
+.card h2{
+    color: rgb(182, 182, 30);
+    box-shadow: 0 4px 12px red;
+    border-radius: 16px;
+}
+/*Preço*/
+.card span{
+    font-weight: bold;
+}
+/*botão*/
+button{
+    margin-top: 30px;
+    padding: 14px 28px;
+    background-color: whitesmoke;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+
+}
+/* resultado*/
+.resultado{
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+
+    /*Sombra leve*/
+    box-shadow: 0 4px 12px black;
+
+    text-align: left;
+}
